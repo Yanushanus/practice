@@ -1,0 +1,73 @@
+body {
+  background-color: azure;
+}
+h1 {
+  text-align: center;
+  color: rgb(212, 173, 249);
+}
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid #000;
+  margin: auto;
+  margin-bottom: 80px;
+}
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(/img/googe_dino.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+#cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url(/game.html);
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  animation: cactusMov 2s infinite linear;
+}
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.jump {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+.goBack {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(141, 251, 215);
+  border: 1px solid rgb(170, 255, 0);
+  border-radius: 50%;
+}
